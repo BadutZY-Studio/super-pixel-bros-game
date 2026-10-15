@@ -1,0 +1,73 @@
+# ==========================================================
+# Super Pixel Bros (Desktop) - Godot 4.x
+# ==========================================================
+
+# Cache dan data internal editor Godot (dibuat ulang otomatis)
+.godot/
+.nomedia
+
+# File .import dan .uid TIDAK di-ignore.
+# Keduanya harus ikut di-commit agar pengaturan import aset
+# dan referensi skrip tetap konsisten di semua perangkat.
+
+# Override pengaturan editor/proyek lokal
+export_credentials.cfg
+*.tmp
+*.translation
+
+# Hasil export (Windows, Linux, macOS)
+*.exe
+*.pck
+*.x86_64
+*.x86_32
+*.arm64
+*.app
+*.dmg
+*.dylib
+*.dll
+*.so
+Super Pixel Bros (Windows)/
+build/
+builds/
+export/
+exports/
+dist/
+
+# Kunci dan sertifikat (jangan pernah di-commit)
+*.keystore
+*.jks
+*.p12
+*.pfx
+*.pem
+*.key
+
+# Mono / C# (jika suatu saat dipakai)
+.mono/
+data_*/
+mono_crash.*.json
+
+# Skrip Python di folder tools
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# File sementara dan log
+*.log
+*.bak
+*.swp
+*~
+
+# Editor dan IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# File sistem operasi
+.DS_Store
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
