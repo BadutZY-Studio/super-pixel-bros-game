@@ -4,13 +4,13 @@
 
 # SUPER PIXEL BROS
 
-**A Retro Pixel Platformer with 20 Levels, Power-Ups, Chiptune Music, and a Cosmetic Shop**
+**A Retro Pixel Platformer with 40 Levels, Power-Ups, Chiptune Music, and a Cosmetic Shop**
 
 [![Engine](https://img.shields.io/badge/Engine-Godot%204.7-478CBF?style=for-the-badge&logo=godotengine&logoColor=white)]()
 [![Language](https://img.shields.io/badge/Language-GDScript-355570?style=for-the-badge&logo=godotengine&logoColor=white)]()
 [![Renderer](https://img.shields.io/badge/Renderer-GL%20Compatibility-FF4040?style=for-the-badge)]()
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-0078D6?style=for-the-badge)]()
-[![Levels](https://img.shields.io/badge/Levels-20-A855F7?style=for-the-badge)]()
+[![Levels](https://img.shields.io/badge/Levels-40-A855F7?style=for-the-badge)]()
 [![Assets](https://img.shields.io/badge/Assets-100%25%20Generated-F59E0B?style=for-the-badge)]()
 
 [About](#about) • [Getting Started](#getting-started) • [Gameplay](#gameplay) • [Shop and Cosmetics](#shop-and-cosmetics) • [Controls](#controls) • [Development](#development) • [Configuration](#configuration) • [Project Structure](#project-structure) • [Credits and License](#credits-and-license) • [Disclaimer](#disclaimer)
@@ -19,7 +19,7 @@
 
 ## About
 
-SUPER PIXEL BROS is a classic side-scrolling pixel platformer. You run, jump, stomp enemies, break bricks, grab power-ups, and race to the flagpole across 20 hand-designed levels split into 2 chapters and 9 world themes. The game features modern jump physics (variable jump height, coyote time, and jump buffering), a chiptune soundtrack, and a complete pixel-art interface.
+SUPER PIXEL BROS is a classic side-scrolling pixel platformer. You run, jump, stomp enemies, break bricks, grab power-ups, and race to the flagpole across 40 hand-designed levels split into 4 chapters and 9 world themes. The game features modern jump physics (variable jump height, coyote time, and jump buffering), a chiptune soundtrack, and a complete pixel-art interface.
 
 Every coin you pick up also fills a permanent wallet that is spent in the **SHOP** on skins, suits, hats, face items, back items, and particle trails. Owned items can be mixed freely, and the equipped look is used in every level.
 
@@ -47,7 +47,7 @@ The simplest way to play is to export a build for your platform (see [Exporting 
 2. Pick an unlocked level on the level select screen.
 3. Run to the flagpole before the timer runs out.
 4. Collect coins along the way and spend them in the **SHOP** from the main menu.
-5. Clearing a level unlocks the next one. Clearing level 10 opens Chapter 2.
+5. Clearing a level unlocks the next one. Clearing the last level of a chapter (10, 20, or 30) opens the next chapter.
 
 ---
 
@@ -59,6 +59,8 @@ The simplest way to play is to export a build for your platform (see [Exporting 
 |---|---|---|---|
 | Chapter 1 | 1 to 10 | Available from the start | Core mechanics, 7 world themes, checkpoints, moving platforms |
 | Chapter 2 | 11 to 20 | Clearing level 10 | Warp pipes, bats, springs, star blocks, fire bars, falling platforms, crushers, jungle and space themes |
+| Chapter 3 | 21 to 30 | Clearing level 20 | Every Chapter 1 and 2 element with denser enemy placement, longer routes, and more bonus rooms |
+| Chapter 4 | 31 to 40 | Clearing level 30 | The hardest chapter: longer enemy chains, combined hazards (crushers, fire bars, bats, spikes), longer falling platform chains, and tighter landings |
 
 Use the `<` and `>` buttons (or Q / E, LB / RB) on the level select screen to switch chapters. Levels unlock in order, and each level card shows a medal when the level is cleared, plus the best score.
 
@@ -129,14 +131,14 @@ The **SHOP** is opened from the basket button on the main menu (or with the **B*
 
 | Category | Items | Price Range (coins) | Notes |
 |---|---|---|---|
-| Skin | 12 | 40 to 250 | Full color sets. Classic is free |
-| Suit | 12 | 25 to 200 | Outfits such as Farmer, Pirate, Ninja, Royal, and Rainbow. Original is free |
-| Hat | 11 | 15 to 200 | Beanie, Top Hat, Wizard Hat, Halo, Crown, and more |
-| Face | 7 | 15 to 60 | Glasses, masks, eyepatch, and big beard |
-| Back | 7 | 30 to 160 | Backpack, capes, angel and demon wings, jetpack |
-| Trail | 6 | 25 to 120 | Bubbles, snowfall, sparkle, hearts, flames, rainbow |
+| Skin | 15 | 40 to 250 | Full color sets, now with Candy, Neon, and Cosmic. Classic is free |
+| Suit | 15 | 25 to 200 | Outfits such as Farmer, Pirate, Ninja, Knight, Astronaut, Pharaoh, Royal, and Rainbow. Original is free |
+| Hat | 13 | 15 to 200 | Beanie, Bunny Ears, Mushroom Cap, Top Hat, Wizard Hat, Halo, Crown, and more |
+| Face | 10 | 15 to 75 | Glasses, mustache, monocle, cyber visor, masks, eyepatch, and big beard |
+| Back | 10 | 30 to 160 | Backpack, knight shield, capes (including Vampire), angel, demon and monarch wings, jetpack |
+| Trail | 9 | 25 to 120 | Bubbles, leaves, snowfall, sparkle, hearts, music notes, flames, coin shower, rainbow |
 
-In total there are 55 cosmetic items (2 free, 53 purchasable). Skin and suit always have one item equipped, while hat, face, back, and trail can be removed. All cosmetics are drawn at runtime from the same pixel maps as the base hero, so no extra image files are needed. The wallet, owned items, and equipped loadout are saved automatically.
+In total there are 72 cosmetic items (2 free, 70 purchasable). Skin and suit always have one item equipped, while hat, face, back, and trail can be removed. All cosmetics are drawn at runtime from the same pixel maps as the base hero, so no extra image files are needed. The wallet, owned items, and equipped loadout are saved automatically.
 
 ---
 
@@ -190,12 +192,12 @@ All keyboard keys and gamepad buttons below are the defaults and can be changed 
 
 | Feature | Description |
 |---|---|
-| 20 Levels | 2 chapters of 10 levels across 9 world themes |
+| 40 Levels | 4 chapters of 10 levels across 9 world themes |
 | Modern Physics | Variable jump height, coyote time, jump buffering, skidding, and run speed |
 | Three Hero Forms | Small, Big, and Fire with fireballs |
 | Varied Enemies | Walkers, shell enemies, piranha plants, and flying bats |
 | Rich Level Elements | Warp pipes, bonus rooms, springs, fire bars, crushers, falling and moving platforms, ice, lava, and spikes |
-| Cosmetic Shop | 55 items across skins, suits, hats, face items, back items, and trails |
+| Cosmetic Shop | 72 items across skins, suits, hats, face items, back items, and trails |
 | Persistent Progress | Unlocked levels, best scores, settings, bindings, wallet, and loadout are saved |
 | Animated Interface | Pixel-wipe scene transitions, animated title screen, themed level cards, and a polished HUD |
 | Full Input Support | Keyboard, mouse, touch, and gamepad with complete rebinding |
@@ -208,10 +210,10 @@ All keyboard keys and gamepad buttons below are the defaults and can be changed 
 
 | Content | Amount |
 |---|---|
-| Levels | 20 (2 chapters of 10) |
+| Levels | 40 (4 chapters of 10) |
 | World Themes | 9 (Grass, Desert, Cave, Snow, Night, Sky, Castle, Jungle, Space) |
 | Hero Forms | 3 (Small, Big, Fire) |
-| Cosmetic Items | 55 across 6 categories |
+| Cosmetic Items | 72 across 6 categories |
 | Music Tracks | 8 |
 | Sound Effects | 21 |
 | Backgrounds | 23 parallax layers |
@@ -304,7 +306,7 @@ Most tuning lives in a few files, so common changes only need small edits.
 | Change chapter layout | `CHAPTERS` in `scripts/game.gd` |
 | Change stomp combo scores | `STOMP_SCORES` in `scripts/level.gd` |
 | Change world themes (colors, decorations, gravity, effects) | `THEMES` in `tools/gen_levels.py` |
-| Edit or add levels | `lvl1()` to `lvl20()` in `tools/gen_levels.py`, then run the generator |
+| Edit or add levels | `lvl1()` to `lvl40()` in `tools/gen_levels.py`, then run the generator |
 | Add or edit shop items and prices | `_build_catalog()` in `scripts/cosmetics.gd` |
 | Change shop layout (columns, cell size) | Constants at the top of `scripts/shop.gd` |
 | Change menu buttons and options panel | `scripts/menu.gd` |
