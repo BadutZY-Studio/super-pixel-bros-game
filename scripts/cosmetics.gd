@@ -139,6 +139,8 @@ static func _build_catalog() -> void:
 		{"pal": {"R": "22b8c8", "B": "1f5fa8", "Y": "fff2a8", "N": "3a2a5a", "O": "20407a"}})
 	_add("skin", "sakura", "SAKURA", 50, "PINK AND PRETTY",
 		{"pal": {"R": "ff7eb6", "B": "c04a8a", "Y": "fff0a0", "W": "fff5fa", "N": "d84a86", "O": "7a2a5a"}})
+	_add("skin", "candy", "CANDY", 70, "SWEET AS SUGAR",
+		{"pal": {"R": "7ee8c8", "B": "ff7fb0", "Y": "fff6a0", "W": "ffffff", "N": "8a4a2a", "O": "c0507a"}})
 	_add("skin", "ember", "EMBER", 60, "BORN IN THE FIRE",
 		{"pal": {"R": "ff7a1a", "B": "8a1c1c", "Y": "ffe36b", "W": "ffd9a0", "N": "3a1a0a", "O": "5a2410"}})
 	_add("skin", "violet", "VIOLET", 60, "ROYAL PURPLE VIBES",
@@ -151,8 +153,12 @@ static func _build_catalog() -> void:
 		{"pal": {"R": "3a3a52", "B": "1c1c2a", "Y": "e04040", "W": "2e2e44", "S": "e8c9a8", "N": "101018", "E": "ff4040", "O": "202030"}})
 	_add("skin", "robot", "ROBOT", 140, "BEEP BOOP, JUMP JUMP",
 		{"pal": {"R": "6a86c0", "B": "3e4e78", "Y": "40e0ff", "W": "d0dcec", "S": "b8c4d4", "N": "5a6a88", "E": "ff3a3a", "O": "2c3450"}})
+	_add("skin", "neon", "NEON", 130, "GLOWS AFTER DARK",
+		{"pal": {"R": "ff2ad4", "B": "1a1a3a", "Y": "3affea", "W": "3affea", "S": "ffd0c0", "N": "3affea", "E": "141414", "O": "ff2ad4"}})
 	_add("skin", "skeleton", "SKELETON", 150, "SPOOKY SCARY BONES",
 		{"pal": {"R": "30303c", "B": "484858", "Y": "eeeadd", "W": "eeeadd", "S": "eeeadd", "N": "bdb8a8", "O": "6a6a72"}})
+	_add("skin", "cosmic", "COSMIC", 180, "LOST IN THE GALAXY",
+		{"pal": {"R": "6a44b8", "B": "1c1c52", "Y": "ffe45a", "W": "9ad8ff", "S": "dccaf4", "N": "ff8ad0", "E": "40e0ff", "O": "2c2c78"}})
 	_add("skin", "golden", "GOLDEN", 250, "SOLID GOLD LEGEND",
 		{"pal": {"R": "ffc828", "B": "c87818", "Y": "ffffff", "W": "fff0a8", "S": "ffd870", "N": "b87818", "E": "40200a", "O": "9a5a10"}})
 	# ---------------------------------------------------------------- SUITS (shirt + overalls only)
@@ -169,12 +175,18 @@ static func _build_catalog() -> void:
 		{"pal": {"R": "e8e8ee", "R2": "20202a", "B": "5a3a24", "Y": "ffd040", "W": "20202a"}})
 	_add("suit", "arctic", "ARCTIC", 70, "BUILT FOR BLIZZARDS",
 		{"pal": {"R": "bfe4ff", "R2": "ffffff", "B": "5a8fd8", "Y": "ffffff", "W": "ffffff"}})
+	_add("suit", "knight", "KNIGHT", 80, "STEEL AND HONOUR",
+		{"pal": {"R": "b8c4d4", "R2": "e2eaf6", "B": "6a7690", "Y": "ffd23a", "W": "8a96ac"}})
 	_add("suit", "tuxedo", "TUXEDO", 90, "BLACK TIE AFFAIR",
 		{"pal": {"R": "24242e", "B": "24242e", "Y": "e83a3a", "W": "ffffff"}})
 	_add("suit", "ninja", "NINJA", 100, "SILENT BUT STYLISH",
 		{"pal": {"R": "2a2a3c", "R2": "3c3c54", "B": "2a2a3c", "Y": "d83030", "W": "2a2a3c"}})
+	_add("suit", "astronaut", "ASTRONAUT", 110, "ONE SMALL STEP",
+		{"pal": {"R": "f4f4f8", "R2": "d0d6e6", "B": "ff8a1a", "Y": "40c8ff", "W": "ffffff"}})
 	_add("suit", "royal", "ROYAL", 120, "FIT FOR A KING",
 		{"pal": {"R": "7a2cb0", "R2": "9a4cd0", "B": "55208a", "Y": "ffe060", "W": "ffe060"}})
+	_add("suit", "pharaoh", "PHARAOH", 135, "RULER OF THE DESERT",
+		{"pal": {"R": "f0c850", "R2": "3a78d0", "B": "2a58b0", "Y": "ffffff", "W": "f0c850"}})
 	_add("suit", "lava", "LAVA", 150, "HOT HOT HOT",
 		{"pal": {"R": "ff6a1a", "R2": "ffc030", "B": "6a1a1a", "Y": "fff08a", "W": "ffb060"}})
 	_add("suit", "rainbow", "RAINBOW", 200, "TASTE THE RAINBOW",
@@ -203,6 +215,16 @@ static func _build_catalog() -> void:
 		"...KPK..KPK.....",
 		"...KKKKKKKK.....",
 	]})
+	_add("hat", "bunny", "BUNNY EARS", 28, "HOP HOP HOORAY", {"y0": -8, "pal": {"W": "fafafa", "P": "ffa0c0", "w": "d8dcf0"}, "rows": [
+		"...WW....WW.....",
+		"...WPW..WPW.....",
+		"...WPW..WPW.....",
+		"...WPW..WPW.....",
+		"...WPW..WPW.....",
+		"...WPw..WPw.....",
+		"....WW...WW.....",
+		"....wwwwwww.....",
+	]})
 	_add("hat", "tophat", "TOP HAT", 30, "VERY FANCY INDEED", {"y0": -7, "pal": {"K": "26262e", "G": "56566a", "R": "d02838"}, "rows": [
 		"....KKKKK.......",
 		"....KGKKK.......",
@@ -228,6 +250,13 @@ static func _build_catalog() -> void:
 		"....WWwWWW......",
 		"....WWWWWW......",
 		"...GGGGGGGG.....",
+	]})
+	_add("hat", "mushroom", "MUSHROOM CAP", 50, "POWER-UP YOUR HEAD", {"y0": -4, "pal": {"R": "e8302c", "D": "a81818", "W": "ffffff"}, "rows": [
+		"....RRRRRR......",
+		"..RRWWRRRRRR....",
+		".RRWWWWRRWWRR...",
+		".RRRWWRRRWWRRR..",
+		"..DDDDDDDDDDD...",
 	]})
 	_add("hat", "pirate", "PIRATE HAT", 55, "ARRR, MATEY", {"y0": -4, "pal": {"K": "20202a", "W": "f4f4f8", "G": "d8a820"}, "rows": [
 		"....KKKKK.......",
@@ -288,10 +317,22 @@ static func _build_catalog() -> void:
 		".......KKK......",
 		".......KKK......",
 	]})
+	_add("face", "mustache", "MUSTACHE", 30, "A TRUE PLUMBER'S PRIDE", {"y0": 5, "pal": {"M": "2a1608", "m": "4a2a12"}, "rows": [
+		"......MMMMMMMM..",
+		".....mM.MMMM.mM.",
+	]})
 	_add("face", "shades", "SHADES", 40, "TOO COOL FOR SCHOOL", {"y0": 2, "pal": {"K": "141418", "L": "9ad0ff"}, "rows": [
 		"....KKKKKKKK....",
 		"......KLKKKK....",
 		"......KKKKKK....",
+	]})
+	_add("face", "monocle", "MONOCLE", 45, "QUITE DAPPER, OLD SPORT", {"y0": 1, "pal": {"G": "ffd23a", "g": "c08a10", "L": "d8f0ff"}, "rows": [
+		".......GGG......",
+		"......GL..G.....",
+		"......G...G.....",
+		".......GgG......",
+		".........g......",
+		".........g......",
 	]})
 	_add("face", "glasses3d", "3D GLASSES", 50, "POP OUT OF THE SCREEN", {"y0": 2, "pal": {"K": "20202a", "R": "ff3040", "C": "30d8ff"}, "rows": [
 		"....KKKKKKKKK...",
@@ -304,20 +345,32 @@ static func _build_catalog() -> void:
 		"....bBBBBBB.....",
 		".....BbBBB......",
 	]})
+	_add("face", "visor", "CYBER VISOR", 75, "SCANNING FOR COINS", {"y0": 2, "pal": {"K": "18182a", "C": "30e0ff", "c": "c4f8ff", "b": "1a90c8"}, "rows": [
+		"....KKKKKKKKK...",
+		"....KcCCCCCCCK..",
+		"....KbbbbbbbbK..",
+		"....KKKKKKKKK...",
+	]})
 	# ---------------------------------------------------------------- BACK
 	_add("back", "backpack", "BACKPACK", 30, "ADVENTURE ESSENTIALS", {"kind": "pack", "pal": {"G": "3c7a3c", "g": "5ca85a", "D": "28502a", "S": "8c5a24"}})
 	_add("back", "shell", "SHELL", 40, "SLOW AND STEADY", {"kind": "shell", "pal": {"G": "36b04a", "g": "58d06a", "D": "1e7434", "Y": "f0dc96", "y": "c8b070"}})
+	_add("back", "shield", "KNIGHT SHIELD", 50, "BLOCKS EVERYTHING (ALMOST)", {"kind": "shield", "pal": {"D": "56607a", "R": "d83a3a", "r": "a82424", "G": "ffd23a"}})
 	_add("back", "redcape", "RED CAPE", 60, "EVERY HERO NEEDS ONE", {"kind": "cape", "pal": {"A": "e02a2a", "B": "a01820", "T": "ffd23a"}})
+	_add("back", "vampirecape", "VAMPIRE CAPE", 75, "I VANT TO BE YOUR HERO", {"kind": "cape", "pal": {"A": "2c1c40", "B": "d01830", "T": "d01830"}})
 	_add("back", "royalcape", "ROYAL CAPE", 90, "VELVET AND GOLD", {"kind": "cape", "pal": {"A": "6a2ab8", "B": "46187e", "T": "ffffff"}})
 	_add("back", "angelwings", "ANGEL WINGS", 130, "SOAR THROUGH THE SKY", {"kind": "wings", "pal": {"W": "ffffff", "L": "c4d4f4", "D": "8aa0d0"}})
 	_add("back", "demonwings", "DEMON WINGS", 130, "A LITTLE BIT NAUGHTY", {"kind": "wings", "pal": {"W": "a03ad0", "L": "6a1e98", "D": "40105e"}})
+	_add("back", "monarchwings", "MONARCH WINGS", 140, "FLUTTER BY", {"kind": "wings", "pal": {"W": "2e1a30", "L": "ff9a2a", "D": "ffd84a"}})
 	_add("back", "jetpack", "JETPACK", 160, "FLAMES WHEN YOU JUMP", {"kind": "jet", "pal": {"G": "8a96ac", "g": "c4cede", "D": "56607a", "R": "e03030", "F": "ff8a1a", "f": "ffe45a"}})
 	# ---------------------------------------------------------------- TRAILS
 	_add("trail", "bubbles", "BUBBLES", 25, "POP POP POP", {"shape": "bubble", "colors": ["bfeaff", "8ad4ff", "e8f8ff"], "rate": 0.09})
+	_add("trail", "leaves", "LEAVES", 30, "AUTUMN BREEZE", {"shape": "leaf", "colors": ["5cc84a", "f0a030", "d8602a", "9ae05a"], "rate": 0.10})
 	_add("trail", "snow", "SNOWFALL", 35, "A CHILL IN THE AIR", {"shape": "flake", "colors": ["ffffff", "d8ecff"], "rate": 0.07})
 	_add("trail", "sparkle", "SPARKLE", 45, "SHINE BRIGHT", {"shape": "star", "colors": ["ffe45a", "ffffff", "fff0a0"], "rate": 0.07})
 	_add("trail", "hearts", "HEARTS", 55, "SPREAD THE LOVE", {"shape": "heart", "colors": ["ff5a8a", "ff8aaa", "ff3a6a"], "rate": 0.12})
+	_add("trail", "notes", "MUSIC NOTES", 65, "CHIPTUNE ON THE MOVE", {"shape": "note", "colors": ["8affd8", "ff8ad0", "ffe45a", "9ab8ff"], "rate": 0.13})
 	_add("trail", "fire", "FLAMES", 80, "BURNING RUBBER", {"shape": "flame", "colors": ["ff6a1a", "ffa020", "ffe040"], "rate": 0.05})
+	_add("trail", "coins", "COIN SHOWER", 100, "MAKE IT RAIN", {"shape": "coin", "colors": ["ffd23a", "fff2a0", "e8a81c"], "rate": 0.08})
 	_add("trail", "rainbow", "RAINBOW", 120, "A TRAIL OF COLOUR", {"shape": "dot", "colors": ["ff3a3a", "ff9a2a", "ffe03a", "3ad04a", "2a8cff", "9a52e0"], "rate": 0.04})
 
 
@@ -565,6 +618,11 @@ static func _paint_back(img: Image, it: Dictionary, big: bool, pose: String) -> 
 			if big:
 				rows = [".DGGGD.", "DGgGGGD", "DYGYGYD", "DGYGgGD", "DYGYGYD", "DGgGYGD", ".DDDDD."]
 			_blit(img, rows, -3, top + 1, cols)
+		"shield":
+			var rows := ["DDDDDD", "DRRGRD", "DGGGGD", "DRRGRD", ".DRGD.", "..DD.."]
+			if big:
+				rows = ["DDDDDDD", "DRRGRRD", "DRRGRRD", "DGGGGGD", "DRRGRRD", "DrRGRrD", ".DRRRD.", "..DRD..", "...D..."]
+			_blit(img, rows, -4, top + 1, cols)
 		"jet":
 			var rows := ["gGgG", "GDGD", "GDGD", "GDGD", "RRRR"]
 			if big:
@@ -761,13 +819,17 @@ const SHAPES := {
 	"heart": [".X.X.", "XXXXX", "XXXXX", ".XXX.", "..X.."],
 	"bubble": [".XX.", "X..X", "X..X", ".XX."],
 	"flame": [".X.", "XXX", "XXX", ".X."],
+	"leaf": ["..XX", ".XXX", "XXX.", "XX.."],
+	"note": ["..XX", "..X.", "..X.", "XXX.", "XX.."],
+	"coin": [".DDD.", "DHXXD", "DXXXD", "DXXXD", ".DDD."],
 }
 
 
 static func _shape_image(shape: String, color: Color) -> Image:
 	var rows: Array = SHAPES[shape]
 	var img := Image.create_empty(String(rows[0]).length(), rows.size(), false, Image.FORMAT_RGBA8)
-	_blit_plain(img, rows, {"X": color})
+	# H / D (used by the coin shape) are a lighter / darker tone of the same colour
+	_blit_plain(img, rows, {"X": color, "H": color.lightened(0.55), "D": color.darkened(0.3)})
 	return img
 
 
@@ -814,6 +876,17 @@ static func spawn_trail(parent: Node, rng: RandomNumberGenerator, id: String, fe
 		"flame":
 			life = 0.4
 			drift = Vector2(-facing * rng.randf_range(2.0, 6.0), -rng.randf_range(6.0, 12.0))
+		"leaf":
+			life = 1.0
+			pos.y -= rng.randf_range(0.0, 6.0)
+			drift = Vector2(-facing * rng.randf_range(4.0, 12.0), rng.randf_range(10.0, 18.0))
+		"note":
+			life = 0.9
+			pos.y -= 4.0
+			drift = Vector2(rng.randf_range(-5.0, 5.0), -rng.randf_range(10.0, 16.0))
+		"coin":
+			life = 0.6
+			drift = Vector2(-facing * rng.randf_range(2.0, 8.0), -rng.randf_range(14.0, 24.0))
 		"dot":
 			life = 0.45
 			pos = Vector2(pos.x, -6.0 - float(counter % 3) * 2.0)

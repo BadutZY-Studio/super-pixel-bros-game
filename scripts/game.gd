@@ -5,10 +5,12 @@ const LevelsData = preload("res://scripts/levels_data.gd")
 const Cosmetics = preload("res://scripts/cosmetics.gd")
 const SAVE_PATH := "user://super_pixel_bros.json"
 
-## Chapters: 10 levels each. Level indices 0-9 = chapter 1, 10-19 = chapter 2.
+## Chapters: 10 levels each. Level indices 0-9 = chapter 1, 10-19 = chapter 2, 20-29 = chapter 3, 30-39 = chapter 4.
 const CHAPTERS := [
 	{"name": "CHAPTER 1", "first": 0, "count": 10},
 	{"name": "CHAPTER 2", "first": 10, "count": 10},
+	{"name": "CHAPTER 3", "first": 20, "count": 10},
+	{"name": "CHAPTER 4", "first": 30, "count": 10},
 ]
 
 ## Shop coins given for every course clear (set to 0 to only earn coins you pick up).
@@ -189,6 +191,10 @@ func load_game() -> void:
 		return
 	unlocked = int(parsed.get("unlocked", 1))
 	best_scores = parsed.get("best", {})
+	# Saves made before a new chapter existed: a cleared level always opens the next one.
+	for k in best_scores:
+		if int(best_scores[k]) > 0:
+			unlocked = maxi(unlocked, mini(int(k) + 2, level_count()))
 	music_volume = float(parsed.get("music", 0.7))
 	sfx_volume = float(parsed.get("sfx", 0.9))
 	fullscreen = bool(parsed.get("fullscreen", false))
