@@ -4,13 +4,13 @@
 
 # SUPER PIXEL BROS - MOBILE UPDATE
 
-**A Touch-First Retro Pixel Platformer with 40 Levels, Power-Ups, Chiptune Music, and a Cosmetic Shop**
+**A Touch-First Retro Pixel Platformer with 50 Levels, Power-Ups, Chiptune Music, and a Cosmetic Shop**
 
 [![Engine](https://img.shields.io/badge/Engine-Godot%204.7-478CBF?style=for-the-badge&logo=godotengine&logoColor=white)]()
 [![Language](https://img.shields.io/badge/Language-GDScript-355570?style=for-the-badge&logo=godotengine&logoColor=white)]()
 [![Renderer](https://img.shields.io/badge/Renderer-GL%20Compatibility-FF4040?style=for-the-badge)]()
 [![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20iOS-0078D6?style=for-the-badge)]()
-[![Levels](https://img.shields.io/badge/Levels-40-A855F7?style=for-the-badge)]()
+[![Levels](https://img.shields.io/badge/Levels-50-A855F7?style=for-the-badge)]()
 [![Assets](https://img.shields.io/badge/Assets-100%25%20Generated-F59E0B?style=for-the-badge)]()
 
 [About](#about) | [Getting Started](#getting-started) | [Gameplay](#gameplay) | [Shop and Cosmetics](#shop-and-cosmetics) | [Controls](#controls) | [Development](#development) | [Configuration](#configuration) | [Project Structure](#project-structure) | [Credits and License](#credits-and-license) | [Disclaimer](#disclaimer)
@@ -19,7 +19,7 @@
 
 ## About
 
-SUPER PIXEL BROS is a classic side-scrolling pixel platformer built for phones and tablets. You run, jump, stomp enemies, break bricks, grab power-ups, and race to the flagpole across 40 hand-designed levels split into 4 chapters and 9 world themes. The game features modern jump physics (variable jump height, coyote time, and jump buffering), a chiptune soundtrack, and a complete pixel-art interface.
+SUPER PIXEL BROS is a classic side-scrolling pixel platformer built for phones and tablets. You run, jump, stomp enemies, break bricks, grab power-ups, and race to the flagpole across 50 hand-designed levels split into 5 chapters and 9 world themes. The game features modern jump physics (variable jump height, coyote time, and jump buffering), a chiptune soundtrack, and a complete pixel-art interface.
 
 The Mobile Update makes the game touch-first. Seven on-screen buttons appear during play with full multi-touch support, and every button can be moved, resized, made transparent, or hidden from a built-in layout editor. A keyboard or gamepad connected to the device (USB, OTG, or Bluetooth) keeps working at the same time.
 
@@ -49,7 +49,7 @@ The simplest way to play is to export a build for your device (see [Exporting a 
 2. Pick an unlocked level on the level select screen.
 3. Run to the flagpole before the timer runs out.
 4. Collect coins along the way and spend them in the **SHOP** from the main menu.
-5. Clearing a level unlocks the next one. Clearing the last level of a chapter (10, 20, or 30) opens the next chapter.
+5. Clearing a level unlocks the next one. Clearing the last level of a chapter (10, 20, 30, or 40) opens the next chapter.
 
 ---
 
@@ -62,7 +62,8 @@ The simplest way to play is to export a build for your device (see [Exporting a 
 | Chapter 1 | 1 to 10 | Available from the start | Core mechanics, 7 world themes, checkpoints, moving platforms |
 | Chapter 2 | 11 to 20 | Clearing level 10 | Warp pipes, bats, springs, star blocks, fire bars, falling platforms, crushers, jungle and space themes |
 | Chapter 3 | 21 to 30 | Clearing level 20 | Every Chapter 1 and 2 element with denser enemy placement, longer routes, and more bonus rooms |
-| Chapter 4 | 31 to 40 | Clearing level 30 | The hardest chapter: longer enemy chains, combined hazards (crushers, fire bars, bats, spikes), longer falling platform chains, and tighter landings |
+| Chapter 4 | 31 to 40 | Clearing level 30 | A very hard chapter: longer enemy chains, combined hazards (crushers, fire bars, bats, spikes), longer falling platform chains, and tighter landings |
+| Chapter 5 | 41 to 50 | Clearing level 40 | The final chapter: the same elements as before, stacked into denser combinations (crusher plus fire bar plus bat in one corridor), wider spike fields, longer koopa trains, longer lava chains with falling platforms, and fewer power-ups. Checkpoints stay roughly every 70 to 80 columns |
 
 Use the `<` and `>` buttons on the level select screen to switch chapters (Q / E or LB / RB also work). Levels unlock in order, and each level card shows a medal when the level is cleared, plus the best score.
 
@@ -78,6 +79,16 @@ Use the `<` and `>` buttons on the level select screen to switch chapters (Q / E
 | 8 | Blizzard Pass | Snow | 360 | 18 | Midnight Bats | Night | 370 |
 | 9 | Fire Fortress | Castle | 380 | 19 | Lava Forge | Castle | 400 |
 | 10 | Final Castle | Castle | 420 | 20 | King's Return | Castle | 440 |
+
+### Chapter 5 Levels
+
+| No. | Level | Theme | Time | No. | Level | Theme | Time |
+|---|---|---|---|---|---|---|---|
+| 41 | Razor Canopy | Jungle | 420 | 46 | Storm Crown | Sky | 430 |
+| 42 | Burning Sands | Desert | 450 | 47 | Meteor Belt | Space | 500 |
+| 43 | Crystal Abyss | Cave | 450 | 48 | Ember Vault | Castle | 560 |
+| 44 | Frozen Ridge | Snow | 490 | 49 | Nebula Rift | Space | 540 |
+| 45 | Phantom Moors | Night | 480 | 50 | Eternal Throne | Castle | 620 |
 
 Each theme has its own sky colors, parallax backgrounds, decorations, music, and atmosphere effects (snow, dust, or embers). The Space theme uses low gravity.
 
@@ -214,7 +225,7 @@ Bindings are fixed. Any keyboard or gamepad connected through USB, OTG, or Bluet
 
 | Feature | Description |
 |---|---|
-| 40 Levels | 4 chapters of 10 levels across 9 world themes |
+| 50 Levels | 5 chapters of 10 levels across 9 world themes |
 | Touch-First Controls | 7 on-screen buttons with multi-touch, haptic feedback, and Auto Run |
 | Custom Layout Editor | Move, resize, fade, and hide every button, saved automatically |
 | Modern Physics | Variable jump height, coyote time, jump buffering, skidding, and run speed |
@@ -228,7 +239,7 @@ Bindings are fixed. Any keyboard or gamepad connected through USB, OTG, or Bluet
 
 | Content | Amount |
 |---|---|
-| Levels | 40 (4 chapters of 10) |
+| Levels | 50 (5 chapters of 10) |
 | World Themes | 9 (Grass, Desert, Cave, Snow, Night, Sky, Castle, Jungle, Space) |
 | Hero Forms | 3 (Small, Big, Fire) |
 | Cosmetic Items | 72 across 6 categories |
@@ -336,7 +347,7 @@ Most tuning lives in a few files, so common changes only need small edits.
 | Change chapter layout | `CHAPTERS` in `scripts/game.gd` |
 | Change stomp combo scores | `STOMP_SCORES` in `scripts/level.gd` |
 | Change world themes (colors, decorations, gravity, effects) | `THEMES` in `tools/gen_levels.py` |
-| Edit or add levels | `lvl1()` to `lvl40()` in `tools/gen_levels.py`, then run the generator |
+| Edit or add levels | `lvl1()` to `lvl50()` in `tools/gen_levels.py`, then run the generator |
 | Add or edit shop items and prices | `_build_catalog()` in `scripts/cosmetics.gd` |
 | Change shop layout (columns, cell size) | Constants at the top of `scripts/shop.gd` |
 | Change menu buttons and options panel | `scripts/menu.gd` |
@@ -359,7 +370,8 @@ python3 tools/gen_levels.py
 | `gen_assets.py` | Chapter 1 sprites, tiles, backgrounds, and UI art |
 | `gen_assets_ch2.py` | Chapter 2 sprites and themes (needs Pillow, reuses helpers from `gen_assets.py`) |
 | `gen_audio.py` | Music tracks and sound effects (needs NumPy) |
-| `gen_levels.py` | Level designs written in an ASCII map format, exported to `scripts/levels_data.gd` |
+| `gen_levels.py` | Level designs written in an ASCII map format, exported to `scripts/levels_data.gd` (levels 1 to 40 are kept as they are, only new levels are appended) |
+| `check_levels.py` | Fairness checks for new levels (hole widths, safe landing strips next to spikes, checkpoint spacing, warp pipes). Run `python3 tools/check_levels.py` after editing levels |
 
 The level legend is documented at the top of `tools/gen_levels.py`.
 
