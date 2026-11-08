@@ -16,7 +16,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 config/name="Super Pixel Bros"
 config/description="A Mario-style platformer with 10 levels, power-ups, enemies and chiptune music."
-config/version="1.3.0"
+config/version="1.4.0"
 run/main_scene="res://scenes/updater.tscn"
 config/quit_on_go_back=false
 config/features=PackedStringArray("4.7", "GL Compatibility")
